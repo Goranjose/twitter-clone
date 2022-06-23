@@ -1,0 +1,178 @@
+:root {
+  --brand-color: #1d9bf0;
+  --gray-color: #cfd9de;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: block;
+}
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+}
+.section-1 {
+  display: flex;
+  width: 100%;
+  height: 240px;
+  background-image: url("/assets/background_login_twitter.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+.section-1 i {
+  position: absolute;
+  font-size: 16rem;
+  color: white;
+  animation: bounce 4s alternate infinite;
+}
+@keyframes bounce {
+  100% {
+    transform: translateY(-16%);
+  }
+  0% {
+    transform: translateY(8%);
+  }
+}
+.section-2 {
+  width: auto;
+  height: 100%;
+  margin: 24px;
+}
+.section-2__icon {
+  width: 48px;
+}
+@font-face {
+  font-family: TwitterChirpExtendedHeavy;
+  src: url(https://abs.twimg.com/fonts/v1/chirp-extended-heavy-web.woff)
+    format("woff");
+}
+.section-2__title {
+  width: 60%;
+  font-family: TwitterChirpExtendedHeavy;
+  font-size: 4rem;
+  margin-bottom: 32px;
+  max-width: 480px;
+  letter-spacing: -0.28rem;
+  margin-top: 36px;
+}
+.section-2__subtitle {
+  width: 68%;
+  font-family: TwitterChirpExtendedHeavy;
+  font-size: 2.4rem;
+  letter-spacing: -0.16rem;
+  margin-bottom: 16px;
+}
+@font-face {
+  font-family: TwitterChirp;
+  src: url(https://abs.twimg.com/fonts/v2/chirp-regular-web.woff) format("woff");
+}
+.section-2__button {
+  overflow: hidden;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  font-family: TwitterChirp;
+  font-size: 1.4rem;
+  border: 0;
+  cursor: pointer;
+  min-width: 240px;
+  border-radius: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.section-2__button--white {
+  display: flex;
+  background: white;
+  border: 1px solid var(--gray-color);
+  justify-content: center;
+  align-items: center;
+}
+.section-2__button--white img {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+.section-2__division {
+  display: flex;
+  width: 100%;
+  font-family: TwitterChirp;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.line {
+  width: 46%;
+  border-bottom: 1px solid gray;
+}
+.section-2__division span {
+  font-size: 1.4rem;
+}
+.section-2__button--blue {
+  color: white;
+  background: var(--brand-color);
+  margin-bottom: 4px;
+}
+.section-2__button--white span {
+  color: var(--brand-color);
+}
+.section-2 p {
+  width: 100%;
+  font-family: TwitterChirp;
+  font-size: 1rem;
+  margin-bottom: 44px;
+}
+.section-2__info span {
+  color: var(--brand-color);
+  cursor: pointer;
+}
+.section-2__info span:hover {
+  text-decoration: underline;
+}
+.section-2 h3 {
+  width: 100%;
+  font-family: TwitterChirp;
+  font-size: 1.6rem;
+  text-align: left;
+  font-weight: 700;
+}
+footer {
+  width: 100%;
+  padding: 12px;
+  padding-top: 8px;
+}
+footer ul {
+  display: flex;
+  font-family: TwitterChirp;
+  font-size: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
+}
+footer ul li {
+  margin: 4px 8px;
+  color: #536471;
+  cursor: pointer;
+}
+.repo a {
+  display: flex;
+  color: #171515;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: -2px;
+}
+.fa-github {
+  font-size: 1.6rem;
+  padding-right: 4px;
+}
