@@ -51,5 +51,11 @@ main {
   text-align: center;
 }
 footer ul {
-  font-size: 1.6rem;
+  display: flex;
+  font-family: TwitterChirp;
+  font-size: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
 }
