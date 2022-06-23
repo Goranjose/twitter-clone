@@ -2,7 +2,10 @@ main {
   flex-direction: row;
 }
 .section-1 {
-  width: 64vw;
+  width: 64%;
+  height: 144vh;
+}
+.section-1 img {
   height: 144vh;
 }
 .section-1 i {
