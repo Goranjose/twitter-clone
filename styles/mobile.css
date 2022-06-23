@@ -10,6 +10,17 @@
 html {
   font-size: 62.5%;
 }
+html.dark-mode {
+  color: white;
+  background-color: black;
+}
+html.dark-mode .repo a {
+  color: white;
+}
+html.dark-mode .section-2__button--mode {
+  color: black;
+  background-color: white;
+}
 body {
   display: block;
 }
@@ -22,9 +33,6 @@ main {
   display: flex;
   width: 100%;
   height: 240px;
-  /* background-image: url("/assets/background_login_twitter.png"); */
-  /* background-size: cover;
-  background-position: center; */
   justify-content: center;
   align-items: center;
 }
@@ -32,7 +40,6 @@ main {
   width: 100%;
   height: 240px;
   object-fit: cover;
-
 }
 .section-1 i {
   position: absolute;
@@ -53,8 +60,31 @@ main {
   height: 100%;
   margin: 24px;
 }
+.header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+}
 .section-2__icon {
   width: 48px;
+}
+.section-2__button--mode {
+  overflow: hidden;
+  width: 40%;
+  height: 34px;
+  font-family: TwitterChirp;
+  font-size: 1.4rem;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  max-width: 160px;
+  border-radius: 24px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: black;
 }
 @font-face {
   font-family: TwitterChirpExtendedHeavy;

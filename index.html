@@ -14,11 +14,17 @@
 <body>
   <main>
     <section class="section-1">
-      <img src="./assets/background_login_twitter.png" alt="">
+      <img src="./assets/background_login_twitter.png" alt="" />
       <i class="fa-brands fa-twitter"></i>
     </section>
     <section class="section-2">
-      <img class="section-2__icon" src="./assets/twitter-icon.png" alt="twitter-icon" />
+      <div class="header">
+        <img class="section-2__icon" src="./assets/twitter-icon.png" alt="twitter-icon" />
+        <!-- Dark Mode -->
+        <button class="section-2__button--mode" onclick="document.documentElement.classList.toggle('dark-mode')">
+          Mode
+        </button>
+      </div>
       <h1 class="section-2__title">Lo que está pasando ahora</h1>
       <h2 class="section-2__subtitle">Únete a Twitter hoy mismo.</h2>
       <button class="section-2__button section-2__button--white">
