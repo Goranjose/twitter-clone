@@ -1,3 +1,7 @@
+html.dark-mode .section-2__button--login:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+  transition: 0.2s ease-in-out all;
+}
 main {
   flex-direction: row;
 }
@@ -52,8 +56,16 @@ main {
 .section-2__division {
   width: 56%;
 }
+.section-2__division span {
+  font-size: 1.6rem;
+}
 .section-2__button--blue {
-  margin-bottom: 2px;
+  margin-bottom: 4px;
+  transition: 0.2s ease-in-out all;
+}
+.section-2__button--blue:hover {
+  background-color: rgb(26, 140, 216);
+  transition: 0.2s ease-in-out all;
 }
 .section-2 p {
   width: 56%;
@@ -63,6 +75,10 @@ main {
   width: 56%;
   text-align: center;
   font-size: 2rem;
+}
+.section-2__button--login:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+  transition: 0.2s ease-in-out all;
 }
 footer ul {
   font-size: 1.4rem;

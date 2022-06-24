@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/jpg" href="assets/twitter-icon.png" />
   <link rel="stylesheet" href="./styles/mobile.css" />
   <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width:769px)" />
   <script src="https://kit.fontawesome.com/e1a74b27d8.js" crossorigin="anonymous"></script>
@@ -40,19 +41,38 @@
         <span>o</span>
         <div class="line"></div>
       </div>
-      <button class="section-2__button section-2__button--blue">
-        Regístrate con el número de teléfono
-      </button>
+      <a href="#modal-1">
+        <button class="section-2__button section-2__button--blue">
+          Regístrate con el número de teléfono o correo electrónico
+        </button>
+      </a>
       <p class="section-2__info">
         Al registrarte, aceptas los <span>Términos de servicio</span> y la
         <span>Política de privacidad</span>, incluida la política de
         <span>Uso de Cookies</span>.
       </p>
       <h3>¿Ya tienes una cuenta?</h3>
-      <button class="section-2__button section-2__button--white">
-        <span>Iniciar de sesión</span>
-      </button>
+      <a class="section-2__a" href="#modal-2">
+        <button class="section-2__button section-2__button--white section-2__button--login">
+          <span>Iniciar de sesión</span>
+        </button>
+      </a>
     </section>
+
+    <section id="modal-1" class="modal-registro">
+      <div class="modal-contenido">
+        <a href="#">X</a>
+        <h2>Crea tu cuenta</h2>
+      </div>
+    </section>
+
+    <section id="modal-2" class="modal-login">
+      <div class="modal-contenido">
+        <a href="#">X</a>
+        <h2>Inicia sesión en Twitter</h2>
+      </div>
+    </section>
+
   </main>
   <footer>
     <ul>

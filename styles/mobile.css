@@ -21,6 +21,10 @@ html.dark-mode .section-2__button--mode {
   color: black;
   background-color: white;
 }
+html.dark-mode .section-2__button--login {
+  transition: 0.2s ease-in-out all;
+  background-color: black;
+}
 body {
   display: block;
 }
@@ -115,7 +119,7 @@ main {
   overflow: hidden;
   width: 100%;
   margin: 10px auto;
-  padding: 10px;
+  padding: 12px;
   font-family: TwitterChirp;
   font-size: 1.4rem;
   border: 0;
@@ -158,13 +162,16 @@ main {
   background: var(--brand-color);
   margin-bottom: 4px;
 }
+.section-2__a {
+  text-decoration: none;
+}
 .section-2__button--white span {
   color: var(--brand-color);
 }
 .section-2 p {
   width: 100%;
   font-family: TwitterChirp;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 44px;
 }
 .section-2__info span {
@@ -180,6 +187,9 @@ main {
   font-size: 1.6rem;
   text-align: left;
   font-weight: 700;
+}
+.section-2__button--login {
+  transition: 0.2s ease-in-out all;
 }
 footer {
   width: 100%;
@@ -211,4 +221,57 @@ footer ul li {
 .fa-github {
   font-size: 1.6rem;
   padding-right: 4px;
+}
+
+/* MODAL REGISTRO */
+.modal-registro {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  transition: 0.4s ease-in-out all;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-contenido {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 10px 20px;
+  background-color: white;
+}
+#modal-1:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* MODAL LOGIN */
+.modal-login {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  transition: 0.4s ease-in-out all;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-contenido {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 10px 20px;
+  background-color: white;
+}
+#modal-2:target {
+  opacity: 1;
+  pointer-events: auto;
 }
