@@ -162,7 +162,7 @@ main {
   background: var(--brand-color);
   margin-bottom: 4px;
 }
-.section-2__a {
+a {
   text-decoration: none;
 }
 .section-2__button--white span {
