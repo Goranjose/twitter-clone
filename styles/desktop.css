@@ -134,6 +134,14 @@ footer ul {
   overflow-y: hidden;
 }
 
+.modal-close-1 {
+  width: 14px;
+}
+
+.modal-close-2 {
+  width: 14px;
+}
+
 .modal-title {
   font-size: 3.6rem;
 }
