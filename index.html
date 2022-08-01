@@ -2,25 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/jpg" href="assets/twitter-icon.png" />
-  <link rel="stylesheet" href="./styles/mobile.css" />
-  <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width:769px)" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./styles/mobile.css" rel="stylesheet">
+  <link href="./styles/desktop.css" rel="stylesheet" media="screen and (min-width:769px)">
   <script src="https://kit.fontawesome.com/e1a74b27d8.js" crossorigin="anonymous"></script>
+  <link type="image/jpg" href="assets/twitter-icon.png" rel="shortcut icon">
   <title>Twitter Clone</title>
 </head>
 
 <body>
   <main>
     <section class="section-1">
-      <img src="./assets/background_login_twitter.png" alt="" />
+      <img src="./assets/background_login_twitter.png" alt>
       <i class="fa-brands fa-twitter"></i>
     </section>
     <section class="section-2">
       <div class="header">
-        <img class="section-2__icon" src="./assets/twitter-icon.png" alt="twitter-icon" />
+        <img class="section-2__icon" src="./assets/twitter-icon.png" alt="twitter-icon">
         <!-- Dark Mode -->
         <button class="section-2__button--mode" onclick="document.documentElement.classList.toggle('dark-mode')">
           Mode
@@ -28,17 +28,17 @@
       </div>
       <h1 class="section-2__title">Lo que está pasando ahora</h1>
       <h2 class="section-2__subtitle">Únete a Twitter hoy mismo.</h2>
-      <a style="text-decoration: none" href="https://myaccount.google.com/" target="_blank"
+      <a href="https://myaccount.google.com/" style="text-decoration: none" target="_blank"
         onclick="window.open(this.href, this.target, 'width=500, height=560, left=400px,top=200px'); return false;">
         <button class="section-2__button section-2__button--white">
-          <img src="./assets/google-icon.png" alt="google-icon" />
+          <img src="./assets/google-icon.png" alt="google-icon">
           Registrarse con Google
         </button>
       </a>
-      <a style="text-decoration: none" href="https://appleid.apple.com/" target="_blank"
+      <a href="https://appleid.apple.com/" style="text-decoration: none" target="_blank"
         onclick="window.open(this.href, this.target, 'width=500, height=560, left=400px,top=200px'); return false;">
         <button class="section-2__button section-2__button--white">
-          <img src="./assets/apple-icon.png" />
+          <img src="./assets/apple-icon.png">
           Registrarse con Apple
         </button>
       </a>
@@ -65,17 +65,56 @@
       </a>
     </section>
 
-    <section id="modal-1" class="modal-registro">
+    <section class="modal-register" id="modal-1">
       <div class="modal-contenido">
-        <a href="#!">X</a>
-        <h2>Crea tu cuenta</h2>
+        <a href="#!">
+          <img class="modal-close-1" src="./assets/close-x.png" alt="X">
+        </a>
+        <span class="modal-span">Paso 1 de 5</span>
+        <div class="modal-info">
+          <h2 class="modal-title">Crea tu cuenta</h2>
+          <label class="input-1" for="Name">
+            <div class="input-container">
+              <div class="span-container">
+                <span>Nombre</span>
+              </div>
+              <div class="input-container__text">
+                <input class="input__text" id="Name" type="text" maxlength="40">
+              </div>
+            </div>
+          </label>
+          <label class="input-1" for="Name">
+            <div class="input-container">
+              <div class="span-container">
+                <span>teléfono</span>
+              </div>
+              <div class="input-container__text">
+                <input class="input__text" id="Name" type="text" maxlength="16">
+              </div>
+            </div>
+          </label>
+          <!-- <span>Usar correo</span>
+          <h3>Fecha de nacimiento</h3>
+          <p>Esta información no será pública. Confirma tu propia edad, incluso si esta cuenta es para una empresa, una
+            mascota u otra cosa.</p> -->
+          <button class="modal__btn">Siguiente</button>
+        </div>
       </div>
     </section>
 
-    <section id="modal-2" class="modal-login">
+    <section class="modal-login" id="modal-2">
       <div class="modal-contenido">
-        <a href="#!">X</a>
-        <h2>Inicia sesión en Twitter</h2>
+        <div class="modal-header">
+          <a href="#!">
+            <img class="modal-close-2" src="./assets/close-x.png" alt="X">
+          </a>
+          <div class="twitter-icon-container">
+            <img class="modal-twitter-icon" src="./assets/black-twitter-icon.png" alt="twitter-icon">
+          </div>
+        </div>
+        <div class="modal-info">
+          <h2 class="modal-title">Inicia sesión en Twitter</h2>
+        </div>
       </div>
     </section>
 

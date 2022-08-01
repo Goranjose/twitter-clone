@@ -2,37 +2,74 @@
   --brand-color: #1d9bf0;
   --gray-color: #cfd9de;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 html {
   font-size: 62.5%;
 }
+
 html.dark-mode {
   color: white;
   background-color: black;
 }
+
 html.dark-mode .repo a {
   color: white;
 }
+
 html.dark-mode .section-2__button--mode {
   color: black;
   background-color: white;
 }
+
 html.dark-mode .section-2__button--login {
   transition: 0.2s ease-in-out all;
   background-color: black;
 }
+
+html.dark-mode .modal-contenido {
+  color: white;
+  background-color: black;
+}
+
+html.dark-mode .modal-close-1,
+html.dark-mode .modal-close-2,
+html.dark-mode .modal-twitter-icon {
+  filter: invert(100%);
+}
+
+html.dark-mode .input-1 {
+  color: white;
+  border: 2px solid #ffffff20;
+  background-color: black;
+}
+
+html.dark-mode .input-1:hover {
+  color: var(--brand-color);
+  border: 2px solid var(--brand-color);
+}
+
+html.dark-mode .input__text {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
 body {
   display: block;
 }
+
 main {
   display: flex;
   width: 100%;
   flex-direction: column-reverse;
 }
+
 .section-1 {
   display: flex;
   width: 100%;
@@ -40,30 +77,36 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .section-1 img {
   width: 100%;
   height: 240px;
   object-fit: cover;
 }
+
 .section-1 i {
   position: absolute;
   font-size: 16rem;
   color: white;
   animation: bounce 4s alternate infinite;
 }
+
 @keyframes bounce {
   100% {
     transform: translateY(-16%);
   }
+
   0% {
     transform: translateY(8%);
   }
 }
+
 .section-2 {
   width: auto;
   height: 100%;
   margin: 24px;
 }
+
 .header {
   display: flex;
   width: 100%;
@@ -71,15 +114,17 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+
 .section-2__icon {
   width: 48px;
 }
+
 .section-2__button--mode {
   overflow: hidden;
   width: 40%;
   height: 34px;
-  font-family: TwitterChirp;
-  font-size: 1.4rem;
+  font-family: TwitterChirp-regular;
+  font-size: 1.6rem;
   color: white;
   border: 0;
   cursor: pointer;
@@ -90,11 +135,12 @@ main {
   white-space: nowrap;
   background-color: black;
 }
+
 @font-face {
   font-family: TwitterChirpExtendedHeavy;
-  src: url(https://abs.twimg.com/fonts/v1/chirp-extended-heavy-web.woff)
-    format("woff");
+  src: url(https://abs.twimg.com/fonts/v1/chirp-extended-heavy-web.woff) format("woff");
 }
+
 .section-2__title {
   width: 60%;
   font-family: TwitterChirpExtendedHeavy;
@@ -104,6 +150,7 @@ main {
   letter-spacing: -0.28rem;
   margin-top: 36px;
 }
+
 .section-2__subtitle {
   width: 68%;
   font-family: TwitterChirpExtendedHeavy;
@@ -111,16 +158,23 @@ main {
   letter-spacing: -0.16rem;
   margin-bottom: 16px;
 }
+
 @font-face {
-  font-family: TwitterChirp;
+  font-family: TwitterChirp-regular;
   src: url(https://abs.twimg.com/fonts/v2/chirp-regular-web.woff) format("woff");
 }
+
+@font-face {
+  font-family: TwitterChirp-heavy;
+  src: url(https://abs.twimg.com/fonts/v2/chirp-heavy-web.woff) format("woff");
+}
+
 .section-2__button {
   overflow: hidden;
   width: 100%;
   margin: 10px auto;
   padding: 12px;
-  font-family: TwitterChirp;
+  font-family: TwitterChirp-regular;
   font-size: 1.4rem;
   border: 0;
   cursor: pointer;
@@ -130,6 +184,7 @@ main {
   white-space: nowrap;
   font-weight: 700;
 }
+
 .section-2__button--white {
   display: flex;
   background: white;
@@ -137,79 +192,95 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .section-2__button--white img {
   width: 16px;
   height: 16px;
   margin-right: 12px;
 }
+
 .section-2__division {
   display: flex;
   width: 100%;
-  font-family: TwitterChirp;
+  font-family: TwitterChirp-regular;
   justify-content: center;
   justify-content: space-between;
   align-items: center;
 }
+
 .line {
   width: 46%;
   border-bottom: 1px solid gray;
 }
+
 .section-2__division span {
   font-size: 1.4rem;
 }
+
 .section-2__button--blue {
   color: white;
   background: var(--brand-color);
   margin-bottom: 4px;
 }
+
 a {
   text-decoration: none;
 }
+
 .section-2__button--white span {
   color: var(--brand-color);
 }
+
 .section-2 p {
   width: 100%;
-  font-family: TwitterChirp;
+  font-family: TwitterChirp-regular;
   font-size: 1.2rem;
   margin-bottom: 44px;
 }
+
 .section-2__info span {
   color: var(--brand-color);
   cursor: pointer;
 }
+
 .section-2__info span:hover {
   text-decoration: underline;
 }
+
 .section-2 h3 {
   width: 100%;
-  font-family: TwitterChirp;
+  font-family: TwitterChirp-heavy;
   font-size: 1.6rem;
   text-align: left;
   font-weight: 700;
 }
+
 .section-2__button--login {
   transition: 0.2s ease-in-out all;
 }
+
 footer {
   width: 100%;
   padding: 12px;
   padding-top: 8px;
 }
+
 footer ul {
   display: flex;
-  font-family: TwitterChirp;
+  font-family: TwitterChirp-regular;
   font-size: 1.2rem;
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
   text-decoration: none;
 }
+
 footer ul li {
   margin: 4px 8px;
   color: #536471;
   cursor: pointer;
 }
+
 .repo a {
   display: flex;
   color: #171515;
@@ -218,13 +289,14 @@ footer ul li {
   text-decoration: none;
   margin-top: -2px;
 }
+
 .fa-github {
   font-size: 1.6rem;
   padding-right: 4px;
 }
 
 /* MODAL REGISTRO */
-.modal-registro {
+.modal-register {
   position: fixed;
   top: 0;
   right: 0;
@@ -238,17 +310,113 @@ footer ul li {
   justify-content: center;
   align-items: center;
 }
+
 .modal-contenido {
   position: relative;
-  width: 300px;
-  height: 300px;
-  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+  padding: 16px 20px;
   background-color: white;
+  border-radius: 20px;
+  overflow-y: scroll;
+  /* scroll-behavior: smooth; */
 }
+
 #modal-1:target {
   opacity: 1;
   pointer-events: auto;
 }
+
+.modal-header {
+  width: 100%;
+}
+
+.modal-close-1 {
+  width: 14px;
+}
+
+.modal-span {
+  font-family: TwitterChirp-heavy;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+.modal-info {
+  display: flex;
+  padding-left: 60px;
+  padding-right: 60px;
+  flex-direction: column;
+}
+
+.modal-title {
+  margin: 36px 0;
+  font-family: TwitterChirp-heavy;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.input-1 {
+  width: 100%;
+  height: 56px;
+  border: 2px solid #00000020;
+  flex-direction: row;
+  border-radius: 4px;
+  margin-bottom: 28px;
+}
+
+.input-1:hover {
+  color: var(--brand-color);
+  border: 2px solid var(--brand-color);
+}
+
+.input-1 span {
+  font-family: TwitterChirp-regular;
+  font-size: 1.4rem;
+  opacity: 72%;
+}
+
+.span-container {
+  margin: 0 8px;
+  margin-top: 6px;
+}
+
+.input-container__text {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.input__text {
+  width: 100%;
+  height: 24px;
+  margin: 0 8px;
+  font-family: TwitterChirp-regular;
+  font-size: 1.8rem;
+  outline: none;
+  border: 0;
+  font-weight: 500;
+}
+
+.modal__btn {
+  overflow: hidden;
+  width: 100%;
+  margin: 10px auto;
+  padding: 12px;
+  font-family: TwitterChirp-regular;
+  font-size: 2rem;
+  background: #77797a;
+  border: 0;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
 /* MODAL LOGIN */
 .modal-login {
   position: fixed;
@@ -264,14 +432,28 @@ footer ul li {
   justify-content: center;
   align-items: center;
 }
-.modal-contenido {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  padding: 10px 20px;
-  background-color: white;
-}
+
 #modal-2:target {
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+}
+
+.modal-close-2 {
+  width: 14px;
+}
+
+.twitter-icon-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.modal-twitter-icon {
+  width: 32px;
 }
